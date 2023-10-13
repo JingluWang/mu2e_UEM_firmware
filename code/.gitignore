@@ -1,0 +1,6 @@
+*.o
+amc502_pll
+amc502_lock
+amc502_mux
+peek
+poke

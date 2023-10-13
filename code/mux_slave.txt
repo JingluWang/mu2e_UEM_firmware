@@ -1,0 +1,16 @@
+MUX0
+  TCLKA input Z
+  TCLKB output FPCLKH
+  PLLCLKA_in output TCLKA
+  PLLCLKB_in output FPCLKE
+  FPCLKE input Z
+  FPCLKF output TCLKA
+  FPCLKG output TCLKA
+  FPCLKH input Z
+  FMCEXPA output FPCLKE
+  FMCEXPB input Z
+MUX1
+  FMCEXPA input Z
+  FMCEXPB output PLLCLKA_out
+  PLLCLKA_out input Z
+  FMC1_CLK2_BIDIR output PLLCLKA_out
