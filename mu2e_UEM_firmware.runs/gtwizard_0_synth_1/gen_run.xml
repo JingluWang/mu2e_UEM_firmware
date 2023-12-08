@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="gtwizard_0_synth_1" LaunchPart="xc7k420tffg1156-2" LaunchTime="1694645536">
+<GenRun Id="gtwizard_0_synth_1" LaunchPart="xc7k420tffg1156-2" LaunchTime="1699934376">
   <File Type="PA-TCL" Name="gtwizard_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="gtwizard_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="gtwizard_0.vds"/>

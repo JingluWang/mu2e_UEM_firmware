@@ -2,25 +2,24 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed Sep 13 15:53:24 2023
-# Process ID: 14912
-# Current directory: C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/decoder_10b8b_rom_synth_1
+# Start of session at: Mon Nov 13 22:00:48 2023
+# Process ID: 34528
+# Current directory: C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/decoder_10b8b_rom_synth_1
 # Command line: vivado.exe -log decoder_10b8b_rom.vds -mode batch -messageDb vivado.pb -notrace -source decoder_10b8b_rom.tcl
-# Log file: C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/decoder_10b8b_rom_synth_1/decoder_10b8b_rom.vds
-# Journal file: C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/decoder_10b8b_rom_synth_1\vivado.jou
+# Log file: C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/decoder_10b8b_rom_synth_1/decoder_10b8b_rom.vds
+# Journal file: C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/decoder_10b8b_rom_synth_1\vivado.jou
 #-----------------------------------------------------------
 source decoder_10b8b_rom.tcl -notrace
 Command: synth_design -top decoder_10b8b_rom -part xc7k420tffg1156-2 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k420t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k420t'
-INFO: [Common 17-86] Your Synthesis license expires in 28 day(s)
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24344 
+INFO: Helper process launched with PID 42472 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 334.402 ; gain = 127.613
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 333.043 ; gain = 126.117
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'decoder_10b8b_rom' [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/synth/decoder_10b8b_rom.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'decoder_10b8b_rom' [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/synth/decoder_10b8b_rom.vhd:67]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -94,7 +93,7 @@ INFO: [Synth 8-638] synthesizing module 'decoder_10b8b_rom' [c:/Users/ericp/Xili
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.229999 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_3' declared at 'c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/blk_mem_gen_v8_3_3/hdl/blk_mem_gen_v8_3.vhd:71' bound to instance 'U0' of component 'blk_mem_gen_v8_3_3' [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/synth/decoder_10b8b_rom.vhd:226]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_3' declared at 'c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/blk_mem_gen_v8_3_3/hdl/blk_mem_gen_v8_3.vhd:71' bound to instance 'U0' of component 'blk_mem_gen_v8_3_3' [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/synth/decoder_10b8b_rom.vhd:226]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -638,7 +637,7 @@ INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_3' declared at 'c:/Users/ericp/Xil
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'decoder_10b8b_rom' (9#1) [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/synth/decoder_10b8b_rom.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'decoder_10b8b_rom' (9#1) [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/synth/decoder_10b8b_rom.vhd:67]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
@@ -741,7 +740,7 @@ WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[9]
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[8]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 523.145 ; gain = 316.355
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:40 . Memory (MB): peak = 522.758 ; gain = 315.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -751,7 +750,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 523.145 ; gain = 316.355
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 522.758 ; gain = 315.832
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -760,35 +759,35 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/decoder_10b8b_rom_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/decoder_10b8b_rom_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/decoder_10b8b_rom_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/decoder_10b8b_rom_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 655.453 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 654.188 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k420tffg1156-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -819,14 +818,14 @@ BRAMs: 1670 (col length: RAMB18 160 RAMB36 80)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -837,9 +836,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 655.453 ; gain = 448.664
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 654.188 ; gain = 447.262
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -853,10 +852,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 670.832 ; gain = 464.043
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 669.684 ; gain = 462.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 670.832 ; gain = 464.043
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 669.684 ; gain = 462.758
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -868,16 +867,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -894,7 +893,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -907,7 +906,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -919,25 +918,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -969,26 +968,26 @@ Report Instance Areas:
 |7     |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init |     1|
 +------+---------------------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 164 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:41 . Memory (MB): peak = 680.543 ; gain = 293.059
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 680.543 ; gain = 473.754
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:51 . Memory (MB): peak = 679.199 ; gain = 293.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 679.199 ; gain = 472.273
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
-INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port clka. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc:54]
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port clka. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc:54]
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/decoder_10b8b_rom/decoder_10b8b_rom_ooc.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+18 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 716.789 ; gain = 469.164
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:58 . Memory (MB): peak = 716.316 ; gain = 470.332
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 716.789 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 13 15:54:17 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 716.316 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 22:01:49 2023...

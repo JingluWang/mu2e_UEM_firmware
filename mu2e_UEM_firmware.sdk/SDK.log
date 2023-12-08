@@ -1,3 +1,0 @@
-17:14:47 INFO  : Launching XSDB server: xsdb -n -interactive /home/mjones/cae/hdl/mu2e/firmware/mu2e_1.sdk/temp_xsdb_launch_script.tcl
-17:15:01 INFO  : XSDB server has started successfully.
-17:15:01 INFO  : Processing command line option -hwspec /home/mjones/cae/hdl/mu2e/firmware/mu2e_1.sdk/top_null.hdf.

@@ -47,7 +47,7 @@ architecture Behavioral of add8_tb is
       sclr : in std_logic;
       c_out : out std_logic;
       s : out std_logic_vector(7 downto 0)
-     )
+     );
   end component;
   
   signal a : std_logic_vector (7 downto 0);
@@ -61,18 +61,18 @@ architecture Behavioral of add8_tb is
 
 begin
   uut : add8 port map (
-         a => a;
-         b => b;
-         clk => clk;
-         c_in => c_in;
-         ce => ce;
-         sclr => sclr;
-         c_out => c_out;
-         s => s;
+         a => a,
+         b => b,
+         clk => clk,
+         c_in => c_in,
+         ce => ce,
+         sclr => sclr,
+         c_out => c_out,
+         s => s
         );
    clk_process : process
    begin 
-     clk = '0';
+     clk <= '0';
      wait for 10 ns;
      clk <= '1';
    end process;

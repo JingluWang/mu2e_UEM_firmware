@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="fifo_generator_0_synth_1" LaunchPart="xc7k420tffg1156-2" LaunchTime="1571450719">
+  <File Type="RDS-UTIL-PB" Name="fifo_generator_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo_generator_0.dcp"/>
   <File Type="RDS-PROPCONSTRS" Name="fifo_generator_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="fifo_generator_0.tcl"/>
   <File Type="RDS-UTIL" Name="fifo_generator_0_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="fifo_generator_0.vds"/>
   <File Type="VDS-TIMING-PB" Name="fifo_generator_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="fifo_generator_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="fifo_generator_0.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="fifo_generator_0_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_generator_0">
     <File Path="$PSRCDIR/sources_1/ip/fifo_generator_0.xcix">
       <FileInfo>

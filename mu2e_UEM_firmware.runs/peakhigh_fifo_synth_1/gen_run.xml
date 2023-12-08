@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="peakhigh_fifo_synth_1" LaunchPart="xc7k420tffg1156-2" LaunchTime="1574202130">
+  <File Type="RDS-UTIL-PB" Name="peakhigh_fifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="peakhigh_fifo.dcp"/>
   <File Type="RDS-PROPCONSTRS" Name="peakhigh_fifo_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="peakhigh_fifo.tcl"/>
   <File Type="RDS-UTIL" Name="peakhigh_fifo_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="peakhigh_fifo.vds"/>
   <File Type="VDS-TIMING-PB" Name="peakhigh_fifo_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="peakhigh_fifo_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="peakhigh_fifo.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="peakhigh_fifo_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/peakhigh_fifo">
     <File Path="$PSRCDIR/sources_1/ip/peakhigh_fifo.xcix">
       <FileInfo>

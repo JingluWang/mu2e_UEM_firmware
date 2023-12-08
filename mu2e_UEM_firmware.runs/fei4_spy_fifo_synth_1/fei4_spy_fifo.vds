@@ -2,25 +2,24 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed Sep 13 15:54:49 2023
-# Process ID: 21496
-# Current directory: C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/fei4_spy_fifo_synth_1
+# Start of session at: Mon Nov 13 22:02:17 2023
+# Process ID: 44104
+# Current directory: C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/fei4_spy_fifo_synth_1
 # Command line: vivado.exe -log fei4_spy_fifo.vds -mode batch -messageDb vivado.pb -notrace -source fei4_spy_fifo.tcl
-# Log file: C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/fei4_spy_fifo_synth_1/fei4_spy_fifo.vds
-# Journal file: C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/fei4_spy_fifo_synth_1\vivado.jou
+# Log file: C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/fei4_spy_fifo_synth_1/fei4_spy_fifo.vds
+# Journal file: C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/fei4_spy_fifo_synth_1\vivado.jou
 #-----------------------------------------------------------
 source fei4_spy_fifo.tcl -notrace
 Command: synth_design -top fei4_spy_fifo -part xc7k420tffg1156-2 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k420t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k420t'
-INFO: [Common 17-86] Your Synthesis license expires in 28 day(s)
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23612 
+INFO: Helper process launched with PID 44768 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 336.980 ; gain = 129.566
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 335.805 ; gain = 128.465
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'fei4_spy_fifo' [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/synth/fei4_spy_fifo.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'fei4_spy_fifo' [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/synth/fei4_spy_fifo.vhd:74]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
@@ -223,7 +222,7 @@ INFO: [Synth 8-638] synthesizing module 'fei4_spy_fifo' [c:/Users/ericp/Xilinx/m
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'fifo_generator_v13_1_1' declared at 'c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1.vhd:75' bound to instance 'U0' of component 'fifo_generator_v13_1_1' [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/synth/fei4_spy_fifo.vhd:541]
+INFO: [Synth 8-3491] module 'fifo_generator_v13_1_1' declared at 'c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1.vhd:75' bound to instance 'U0' of component 'fifo_generator_v13_1_1' [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/synth/fei4_spy_fifo.vhd:541]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
@@ -891,7 +890,7 @@ INFO: [Synth 8-3491] module 'fifo_generator_v13_1_1' declared at 'c:/Users/ericp
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'fei4_spy_fifo' (11#1) [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/synth/fei4_spy_fifo.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'fei4_spy_fifo' (11#1) [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/synth/fei4_spy_fifo.vhd:74]
 WARNING: [Synth 8-3331] design builtin_extdepth_v6 has unconnected port INT_CLK
 WARNING: [Synth 8-3331] design builtin_extdepth_v6 has unconnected port PROG_FULL_THRESH[9]
 WARNING: [Synth 8-3331] design builtin_extdepth_v6 has unconnected port PROG_FULL_THRESH[8]
@@ -994,7 +993,7 @@ WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[1
 WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 443.637 ; gain = 236.223
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 442.492 ; gain = 235.152
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1004,7 +1003,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 443.637 ; gain = 236.223
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 442.492 ; gain = 235.152
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1013,39 +1012,39 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/fei4_spy_fifo_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/fei4_spy_fifo_synth_1/dont_touch.xdc]
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/fei4_spy_fifo_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/fei4_spy_fifo_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 661.090 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 660.078 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k420tffg1156-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1090,14 +1089,14 @@ BRAMs: 1670 (col length: RAMB18 160 RAMB36 80)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1114,9 +1113,9 @@ WARNING: [Synth 8-3332] Sequential element (inst_fifo_gen/gconvfifo.rf/gbi.bi/g7
 WARNING: [Synth 8-3332] Sequential element (inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_fb_reg[0]) is unused and will be removed from module fifo_generator_v13_1_1.
 WARNING: [Synth 8-3332] Sequential element (inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_reg_reg) is unused and will be removed from module fifo_generator_v13_1_1.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 661.090 ; gain = 453.676
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 660.078 ; gain = 452.738
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1130,10 +1129,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 683.691 ; gain = 476.277
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 682.461 ; gain = 475.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 683.691 ; gain = 476.277
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 682.480 ; gain = 475.141
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1145,16 +1144,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -1171,7 +1170,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1184,7 +1183,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1196,25 +1195,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1267,29 +1266,29 @@ Report Instance Areas:
 |9     |              \gonep.inst_prim             |builtin_prim_v6                |     2|
 +------+-------------------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 490 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 704.105 ; gain = 228.879
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 704.105 ; gain = 496.691
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 701.875 ; gain = 226.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 701.875 ; gain = 494.535
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ryry0/Downloads/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/ip/fei4_spy_fifo/fei4_spy_fifo/fei4_spy_fifo_clocks.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+17 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 725.023 ; gain = 477.707
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 724.863 ; gain = 478.551
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 725.023 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 13 15:55:18 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 724.863 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 22:02:52 2023...

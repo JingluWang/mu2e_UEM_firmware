@@ -1,0 +1,11 @@
+# log and journal files
+*.log
+*.jou
+
+# stuff about webtalk
+# **/*webtalk*
+
+# unneeded build folders
+*.cache/*
+*.hw/*
+*.sim/*
