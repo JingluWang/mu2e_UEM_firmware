@@ -1,0 +1,236 @@
+//
+// take raw data and plot profile
+//
+
+#include "TVectorD.h"
+#include <TTree.h>
+#include <TGraph.h>
+#include <TFile.h>
+#include <TSystem.h>
+#include <TCanvas.h>
+#include <TProfile2D.h>
+#include <TStyle.h>
+#include "../dataClasses/RawEvent.h"
+using namespace std;
+R__LOAD_LIBRARY($/home/kujiwado/WorkDir/FileTransfer/mu2euem/FMC228_v3/libData.so)
+gSystem->Load("/home/kujiwado/WorkDir/FileTransfer/mu2euem/FMC228_v3/libData.so");  // from TSystem.h, loads things like RawEvent
+gSystem->Load("/home/kujiwado/WorkDir/FileTransfer/mu2euem/FMC228_v3/dataClasses/DataCint_rdict.pcm");  // for root6 
+//void testShowProf_rawevent(char* rootfile, int nevn)
+void ShowProf_rawevent()
+{
+
+  using std::count;
+  using std::endl;
+  gStyle ->SetCanvasDefH(900);
+  gStyle ->SetCanvasDefW(1500);
+
+  gSystem->Load("/home/kujiwado/WorkDir/FileTransfer/mu2euem/FMC228_v3/libData.so");
+
+  TFile *fr = new TFile("/home/kujiwado/WorkDir/FileTransfer/mu2euem/test78.root");
+  if (fr) {
+    std::cout << "The file was opened successfully." << std::endl;
+    }
+  else {
+    // The file could not be opened.
+    std::cout << "The file could not be opened." << std::endl;
+    }
+
+  //
+  TTree *tr = (TTree*)fr->Get("rtree");
+
+  RawEvent *revent = new RawEvent();
+  
+   //  TGraph *gr[10000];
+
+  Int_t x[10000];
+  Int_t y[10000];
+  Int_t peakhigh[10000];
+  Int_t vpeakhigh[10000];
+  Int_t vpeaksum[10000];
+  Int_t peaktime[10000];
+  Int_t peaksum[10000];
+  Int_t peaksumtime1[10000];
+  Int_t peaksumtime2[10000];
+  //  long long int bdsafasdf[10000][10000];
+  vector<vector<Int_t>> ch_vpeakhigh ;
+  vector<vector<Int_t>> ch_vpeakhigh_time_us ;
+  vector<vector<Int_t>> ch_vpeakhigh_time_ns ;
+  vector<vector<Long_t>>ch_vpeaksum0;
+  vector<vector<Int_t>>ch_vpeaksum0_peak;
+  vector<vector<Long_t>>ch_vpeaksum_tail;
+  vector<vector<Long_t>>ch_vpeaksum_peak;
+  vector<vector<Int_t>>ch_vpeaksum;
+  vector<vector<Int_t>>ch_vpeaksum_time0_us;
+  vector<vector<UInt_t>>ch_vpeaksum_time0_ns;
+  vector<vector<Double_t>>ch_vpeaksum_time1_ms;
+  vector<vector<Double_t>>ch_vpeaksum_time1_us;
+  vector<vector<UInt_t>>ch_vpeaksum_time1_ns;
+  vector<vector<Double_t>>ch_vpeaksum_time2_us;
+  vector<vector<UInt_t>>ch_vpeaksum_time2_ns;
+    
+  Int_t npeak_ch0[10000];
+  Int_t npeak_ch1[10000];
+  Int_t npeak_ch2[10000];
+  Int_t npeak_ch3[10000];
+
+  Int_t nsum_ch0[10000];
+  Int_t nsum_ch1[10000];
+  Int_t nsum_ch2[10000];
+  Int_t nsum_ch3[10000];
+
+  Int_t nraw[10000];
+  Int_t raw_x[10000];
+  Int_t raw_y[10000];
+  
+  Int_t nevn =20;
+  int nevents = tr->GetEntries();
+  Int_t fAmplitude[10000];
+  Int_t fTime[10000];
+  cout<<"N-------"<<nevents<<endl;
+ 
+
+ TProfile2D *hprof2d_vpeakheight_ms = new TProfile2D("hprof2d_vpeakheight_ms","vprofile 2D peakheight ms  ",600,-50,550,5000,0,5000,-2500,0);
+
+ TProfile2D * hprof2d_vpeaksum_ms = new TProfile2D("hprof2d_vpeaksum_ms","vprofile 2D peaksum ms  ",600,-50,550,5000,0,5000,-30000,0);
+  TProfile2D *hprof2d_vpeaksum_160ms = new TProfile2D("hprof2d_vpeaksum_160ms","vprofile 2D peaksum 160ms  ",210,-50,160,5000,0,5000,-30000,0);
+  TProfile2D *hprof2d_vpeaksum_us_batch1 = new TProfile2D("hprof2d_vpeaksum_us_batch1","vprofile 2D peaksum us batch 1 ",3000,0,3000,5000,0,5000,-30000,0);
+  TProfile2D *hprof2d_vpeaksum_us_batch2 = new TProfile2D("hprof2d_vpeaksum_us_batch2","vprofile 2D peaksum us batch 2 ",3000,66000,69000,5000,0,5000,-30000,0);
+
+  tr->SetBranchAddress("ch0.",&revent);
+  printf("CH0 CH0 CH0 \n");
+
+  // resize the vectors, first the height to nevn
+  ch_vpeakhigh.resize(nevn+1) ;
+  ch_vpeakhigh_time_us.resize(nevn+1);
+  ch_vpeakhigh_time_ns.resize(nevn+1) ;
+  ch_vpeaksum0.resize(nevn+1);
+  ch_vpeaksum0_peak.resize(nevn+1);
+  ch_vpeaksum_tail.resize(nevn+1);
+  ch_vpeaksum_peak.resize(nevn+1);
+  ch_vpeaksum.resize(nevn+1);
+  ch_vpeaksum_time0_us.resize(nevn+1);
+  ch_vpeaksum_time0_ns.resize(nevn+1);
+  ch_vpeaksum_time1_ms.resize(nevn+1);
+  ch_vpeaksum_time1_us.resize(nevn+1);
+  ch_vpeaksum_time1_ns.resize(nevn+1);
+  ch_vpeaksum_time2_us.resize(nevn+1);
+  ch_vpeaksum_time2_ns.resize(nevn+1);
+
+  // resize the width to nevn as well (to keep it simple. PAIN!)
+  for (int kl=0;kl<nevn+1;kl++)
+    { ch_vpeakhigh[kl].resize(nevn+1) ;
+      ch_vpeakhigh_time_us[kl].resize(nevn+1);
+      ch_vpeakhigh_time_ns[kl].resize(nevn+1) ;
+      ch_vpeaksum0[kl].resize(nevn+1);
+      ch_vpeaksum0_peak[kl].resize(nevn+1);
+      ch_vpeaksum_tail[kl].resize(nevn+1);
+      ch_vpeaksum_peak[kl].resize(nevn+1);
+      ch_vpeaksum[kl].resize(nevn+1);
+      ch_vpeaksum_time0_us[kl].resize(nevn+1);
+      ch_vpeaksum_time0_ns[kl].resize(nevn+1);
+      ch_vpeaksum_time1_ms[kl].resize(nevn+1);
+      ch_vpeaksum_time1_us[kl].resize(nevn+1);
+      ch_vpeaksum_time1_ns[kl].resize(nevn+1);
+      ch_vpeaksum_time2_us[kl].resize(nevn+1);
+      ch_vpeaksum_time2_ns[kl].resize(nevn+1);
+    }
+
+  //plotting waveform
+
+  //  Int_t sizer = 16000;
+  // for(int ii= 0; ii< sizer ;ii++)
+  //   { if ((revent->GetAmp(ii))>0)
+  // 	{cout<<"event: "<<ii<<" Amp: "<<revent->GetAmp(ii)<<" Time: "<<revent->GetTime(ii)<<endl;}
+  // }
+  
+  for(int i= 0; i< nevn ;i++)
+  //for(int i= 0; i< nevents ;i++)
+  //for(int i= 0; i< 10 ;i++)
+   { 
+        tr->GetEntry(i);
+	nraw[i] = revent->GetVAmpSize();
+        npeak_ch0[i] = revent->GetVPeakHighSize();
+        nsum_ch0[i] = revent->GetVPeakSumSize();
+	//cout<<"counter: "<<npeak_ch0[i]<<endl;
+	// printf("event %d \t", i);
+        // printf("nraw_ch0 = %d\t",nraw[i]);
+        // printf("npeak_ch0 = %d\t",npeak_ch0[i]);
+        // printf("nsum_ch0 = %d\n",nsum_ch0[i]);
+	//fAmplitude.push_back(revent->GetAmp(i));
+	//fTime.push_back(revent->GetTime(i));	
+        for(int j =0; j< npeak_ch0[i] ;j++)  //counter=npeak_ch0
+        {
+	  cout<<"sedgffg"<<endl;
+	  fAmplitude[j]=revent->GetVAmp()[j];
+	  fTime[j]=revent->GetVTime()[j];
+ 	  cout<<"event: "<<j<<" Amp: "<<revent->GetVAmp()[j]<<endl;
+	  //cout<<"ch_vpeakhigh height: "<<ch_vpeakhigh.size()<<" ch_vpeakhigh width: "<<ch_vpeakhigh[0].size()<<endl;
+	  //ch_vpeakhigh[i][j]=revent->GetVPeakHigh()[j];
+	  //ch_vpeakhigh_time_us[i][j]=revent->GetVPeakHighTime()[j]*0.001; //convert to us
+	  //ch_vpeakhigh_time_ns[i][j]=revent->GetVPeakHighTime()[j]; //ns
+	   // hprof2d_vpeakheight_ms -> Fill(ch_vpeakhigh_time_us[i][j]*0.001,i,ch_vpeakhigh[i][j],1);
+
+	   
+       }               
+       
+   } //close nevn loop
+
+
+	/*
+       for(int j =0; j< nsum_ch0[i] ;j++)
+       {
+          ch_vpeaksum0[i][j]=revent->GetVPeakSum0()[j];
+          ch_vpeaksum[i][j]=revent->GetVPeakSum()[j];
+          ch_vpeaksum0_peak[i][j]=revent->GetVPeakSum0_peak()[j];
+
+          ch_vpeaksum_time0_us[i][j]=revent->GetVPeakSumTime0()[j]*0.001; //convert to us
+          ch_vpeaksum_time0_ns[i][j]=revent->GetVPeakSumTime0()[j]; //ns
+
+          ch_vpeaksum_time1_ms[i][j]=revent->GetVPeakSumTime1()[j]*0.000001; //convert to ms
+          ch_vpeaksum_time1_us[i][j]=revent->GetVPeakSumTime1()[j]*0.001; //convert to us
+          ch_vpeaksum_time1_ns[i][j]=revent->GetVPeakSumTime1()[j]; //ns
+          //printf("time sum1 = %d \t", ch_vpeaksum_time1_ns[i][j]);
+          //printf("time sum0 = %d \t", ch_vpeaksum_time0_ns[i][j]);
+
+          ch_vpeaksum_time2_us[i][j]=revent->GetVPeakSumTime2()[j]*0.001; //convert to us
+          ch_vpeaksum_time2_ns[i][j]=revent->GetVPeakSumTime2()[j]; //ns
+          //printf("time sum2 = %d \n", ch_vpeaksum_time2_ns[i][j]);
+
+
+          hprof2d_vpeaksum_ms -> Fill(ch_vpeaksum_time1_ms[i][j],i,ch_vpeaksum[i][j],1);
+
+             if(ch_vpeaksum_time1_us[i][j] < 3000)
+               {
+                hprof2d_vpeaksum_us_batch1 -> Fill(ch_vpeaksum_time1_us[i][j],i,ch_vpeaksum[i][j],1);
+               } else if(ch_vpeaksum_time1_us[i][j] > 66000 && ch_vpeaksum_time1_us[i][j] < 69000)
+               {
+                hprof2d_vpeaksum_us_batch2 -> Fill(ch_vpeaksum_time1_us[i][j],i,ch_vpeaksum[i][j],1);
+               } 
+       }
+      
+
+  }
+        
+        
+ 
+  
+	*/
+  
+  TCanvas *c_prof_ms = new TCanvas("c_prof_ms","profile sum ms ",200,10,700,500);
+  //TGraph *g = new TGraph(fAmplitude.size(),&fAmplitude[0],&fTime[0]);
+  //TCanvas *c_prof_us_batch1 = new TCanvas("c_prof_us_batch1","profile sum us batch1",200,10,700,500);
+  //TCanvas *c_prof_us_batch2 = new TCanvas("c_prof_us_batch2","profile sum us batch2",200,10,700,500);
+
+  c_prof_ms->cd();
+  //hprof2d_vpeaksum_ms->Draw("colz");
+  //  hprof2d_vpeakheight_ms->Draw("colz");
+  //  g->Draw("AL");
+  // c_prof_us_batch1->cd();
+  // hprof2d_vpeaksum_us_batch1->Draw("colz");
+
+  // c_prof_us_batch2->cd();
+  // hprof2d_vpeaksum_us_batch2->Draw("colz");
+
+}
+
+	
